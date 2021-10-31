@@ -1,9 +1,4 @@
 # Hogwarts-Hopefuls README <!-- omit in toc -->
-
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
-
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Goals](#goals)
@@ -23,16 +18,14 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**Hogwarts Hopefuls** is a full-stack app where users can sign up for a touch of magic. The app will sort the user into their house based on their answer to a riddle. It will also assign each student, or user, a pet and specialty spell._
 
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app. Its backend will employ full CRUD via Ruby on Rails, while its frontend will be a React App with full CRUD._
 
 <br>
 
