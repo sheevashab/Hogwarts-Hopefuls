@@ -114,7 +114,7 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | README    |    H     |     3 hrs      |      hrs     |     hrs    |
-| ERD |    H     |     1 hrs      |      hrs     |     hrs     |
+| ERD Model |    H     |     1 hrs      |      hrs     |     hrs     |
 | Component Tree |    H     |     1 hrs      |      hrs     |     hrs     |
 | Component Architecture |    H     |     1 hrs      |      hrs     |     hrs     |
 | Wireframes |    H     |     3 hrs      |      hrs     |     hrs     |
