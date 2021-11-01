@@ -17,7 +17,7 @@
 
 ## Overview
 
-_**Hogwarts Hopefuls** is a full-stack app where users can sign up for an added touch of magic to their lives. The app will sort the user into their respective Hogwarts house based on their answer to a riddle. It will also assign each student, or user, a pet, a patronus, and a specialty spell._
+_**Hogwarts Hopefuls** is a full-stack app where users can sign up for an added touch of magic to their lives. The app will sort the user into their respective Hogwarts house based on their answer to a riddle. Each student, or user, can also select their pet, patronus, and specialty spell._
 
 
 <br>
