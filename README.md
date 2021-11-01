@@ -7,8 +7,6 @@
     - [Wireframes](#wireframes)
     - [Component Tree](#component-tree)
     - [Component Architecture](#component-architecture)
-  - [Server (Back End)](#server-back-end)
-    - [ERD Model](#erd-model)
 - [Post-MVP](#post-mvp)
 - [Code Showcase](#code-showcase)
 - [Code Issues & Resolutions](#code-issues--resolutions)
@@ -152,7 +150,6 @@ src
 
 #### ERD Model
 ![ERD Sample](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635809676/hogwarts_hopefuls_ERD_pqpbbh.png)
-[ERD Sample](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635809676/hogwarts_hopefuls_ERD_pqpbbh.png)
 <br>
 
 ***
