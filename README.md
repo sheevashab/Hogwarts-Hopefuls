@@ -112,8 +112,8 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| README    |    H     |     3 hrs      |      hrs     |     hrs    |
-| ERD Model |    H     |     1 hrs      |      hrs     |     hrs     |
+| README    |    H     |     3 hrs      |     4 hrs     |     hrs    |
+| ERD Model |    H     |     1 hrs      |    .5 hrs     |     hrs     |
 | Component Tree |    H     |     1 hrs      |      hrs     |     hrs     |
 | Component Architecture |    H     |     1 hrs      |      hrs     |     hrs     |
 | Wireframes |    H     |     3 hrs      |      hrs     |     hrs     |
@@ -151,10 +151,8 @@ src
 ### Server (Back End)
 
 #### ERD Model
-
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+![ERD Sample](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635809676/hogwarts_hopefuls_ERD_pqpbbh.png)
+[ERD Sample](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635809676/hogwarts_hopefuls_ERD_pqpbbh.png)
 <br>
 
 ***
