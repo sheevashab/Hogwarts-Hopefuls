@@ -113,36 +113,37 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| README    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| ERD |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Component Tree |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Component Architecture |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Wireframes |    H     |     3 hrs      |     1 hrs     |     TBD     |
-
-| Creating and Setting Up Backend |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Authorization |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Creating Tables |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Creating Models |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Seeding Data |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Creating Controllers |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Creating Routes |    H     |     3 hrs      |     1 hrs     |     TBD     |
-
-| Create React App with Component Architecture |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Code Routes in App.jsx |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Code Authorization - Sign In/ Sign Up Forms with Sign Out Component |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Code Layout Component |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Code Home Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Code House Sorting Screens |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Code Profile Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Code Alumni Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
-
-| Style Layout - Header + Footer |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Style Home Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Style Sign In/Up Screens |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Style House Sorting Screens |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Style Profile Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Style Alumni Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
-
+| README    |    H     |     3 hrs      |      hrs     |     hrs    |
+| ERD |    H     |     1 hrs      |      hrs     |     hrs     |
+| Component Tree |    H     |     1 hrs      |      hrs     |     hrs     |
+| Component Architecture |    H     |     1 hrs      |      hrs     |     hrs     |
+| Wireframes |    H     |     3 hrs      |      hrs     |     hrs     |
+| Create and Setting Up Backend |    H     |     1 hrs      |     hrs     |     hrs     |
+| Authorization |    H     |     2 hrs      |     hrs     |     hrs     |
+| Create Tables |    H     |     1 hrs      |     hrs     |     hrs     |
+| Create Models |    H     |     1 hrs      |     hrs     |     hrs     |
+| Seed Data |    H     |     2 hrs      |     hrs     |     hrs     |
+| Create Controllers |    H     |     3 hrs      |     hrs     |     hrs     |
+| Create Routes |    H     |     3 hrs      |     hrs     |     hrs     |
+| Set Up Cors |    H     |     .5 hrs      |     hrs     |     hrs     |
+| Deploy Backend via Heroku |    H     |     1 hrs      |     hrs     |     hrs     |
+| Create React App, Install Dependencies, Set Up Component Architecture |    H     |     1.5 hrs      |     hrs     |     hrs     |
+| Code Routes in App.jsx |    H     |     2 hrs      |     hrs     |     hrs     |
+| Code Authorization - Sign In/ Sign Up Forms with Sign Out Component |    H     |     3 hrs      |     hrs     |     hrs     |
+| Code Layout Component |    H     |     2 hrs      |     hrs     |     hrs     |
+| Code Home Screen |    H     |     3 hrs      |     hrs     |     hrs     |
+| Code House Sorting Screens |    H     |     3 hrs      |     hrs     |     hrs     |
+| Code Profile Screen |    H     |     3 hrs      |     hrs     |     hrs     |
+| Code Alumni Screen |    H     |     3 hrs      |     hrs     |     hrs     |
+| Style Layout - Header + Footer |    H     |     3 hrs      |     hrs     |     hrs     |
+| Style Home Screen |    H     |     3 hrs      |     hrs     |     hrs     |
+| Style Sign In/Up Screens |    H     |     3 hrs      |     hrs     |     hrs     |
+| Style House Sorting Screens |    H     |     3 hrs      |     hrs     |     hrs     |
+| Style Profile Screen |    H     |     3 hrs      |     hrs     |     hrs     |
+| Style Alumni Screen |    H     |     3 hrs      |     hrs     |     hrs     |
+| Deploy Frontend via Netlify |    H     |     1 hrs      |     hrs     |     hrs     |
+| Linting |    M     |     1 hrs      |     hrs     |     hrs     |
+| PostMVP |    L     |     hrs      |     hrs     |     hrs     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
