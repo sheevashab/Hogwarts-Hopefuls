@@ -113,7 +113,6 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-
 | README    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
 | ERD |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | Component Tree |    H     |     3 hrs      |     1 hrs     |     TBD     |
