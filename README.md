@@ -143,8 +143,7 @@ src
 | Style Alumni Screen |    H     |     3 hrs      |     hrs     |     hrs     |
 | Deploy Frontend via Netlify |    H     |     1 hrs      |     hrs     |     hrs     |
 | Linting |    M     |     1 hrs      |     hrs     |     hrs     |
-| PostMVP |    L     |     hrs      |     hrs     |     hrs     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| TOTAL               |          |     64 hrs      |     3 hrs     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
