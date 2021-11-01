@@ -131,14 +131,14 @@ src
 | Code Authorization - Sign In/ Sign Up Forms with Sign Out Component |    H     |     3 hrs      |     hrs     |     hrs     |
 | Code Layout Component |    H     |     2 hrs      |     hrs     |     hrs     |
 | Code Home Screen |    H     |     3 hrs      |     hrs     |     hrs     |
-| Code House Sorting Screens |    H     |     3 hrs      |     hrs     |     hrs     |
-| Code Profile Screen |    H     |     3 hrs      |     hrs     |     hrs     |
+| Code Sorting / Spell Screens |    H     |     3 hrs      |     hrs     |     hrs     |
+| Code Profile/Edit Screen |    H     |     3 hrs      |     hrs     |     hrs     |
 | Code Alumni Screen |    H     |     3 hrs      |     hrs     |     hrs     |
 | Style Layout - Header + Footer |    H     |     3 hrs      |     hrs     |     hrs     |
 | Style Home Screen |    H     |     3 hrs      |     hrs     |     hrs     |
 | Style Sign In/Up Screens |    H     |     3 hrs      |     hrs     |     hrs     |
-| Style House Sorting Screens |    H     |     3 hrs      |     hrs     |     hrs     |
-| Style Profile Screen |    H     |     3 hrs      |     hrs     |     hrs     |
+| Style Sorting / Spell Screens |    H     |     3 hrs      |     hrs     |     hrs     |
+| Style Profile/Edit Screen |    H     |     3 hrs      |     hrs     |     hrs     |
 | Style Alumni Screen |    H     |     3 hrs      |     hrs     |     hrs     |
 | Deploy Frontend via Netlify |    H     |     1 hrs      |     hrs     |     hrs     |
 | Linting |    M     |     1 hrs      |     hrs     |     hrs     |
