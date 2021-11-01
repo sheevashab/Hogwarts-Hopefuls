@@ -18,7 +18,7 @@
 
 ## Overview
 
-_**Hogwarts Hopefuls** is a full-stack app where users can sign up for a touch of magic. The app will sort the user into their house based on their answer to a riddle. It will also assign each student, or user, a pet and specialty spell._
+_**Hogwarts Hopefuls** is a full-stack app where users can sign up for an added touch of magic to their lives. The app will sort the user into their respective Hogwarts house based on their answer to a riddle. It will also assign each student, or user, a pet, a patronus, and a specialty spell._
 
 
 <br>
@@ -31,11 +31,11 @@ _The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app. Its backend wi
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Full-stack, React on Rails application_
+- _Full CRUD functionality on backend and frontend_
+- _RESTful JSON API with at least 3 tables and 1 association_
+- _Employ 2 media queries for responsive design_
+- _Deploy via Heroky and Netlify_
 
 <br>
 
@@ -113,8 +113,37 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+
+| README    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| ERD |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Component Tree |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Component Architecture |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Wireframes |    H     |     3 hrs      |     1 hrs     |     TBD     |
+
+| Creating and Setting Up Backend |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Authorization |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Creating Tables |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Creating Models |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Seeding Data |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Creating Controllers |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Creating Routes |    H     |     3 hrs      |     1 hrs     |     TBD     |
+
+| Create React App with Component Architecture |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Code Routes in App.jsx |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Code Authorization - Sign In/ Sign Up Forms with Sign Out Component |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Code Layout Component |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Code Home Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Code House Sorting Screens |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Code Profile Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Code Alumni Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
+
+| Style Layout - Header + Footer |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Style Home Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Style Sign In/Up Screens |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Style House Sorting Screens |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Style Profile Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Style Alumni Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
+
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
