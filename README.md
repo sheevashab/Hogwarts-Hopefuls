@@ -6,7 +6,6 @@
   - [Client (Front End)](#client-front-end)
     - [Wireframes](#wireframes)
     - [Component Tree](#component-tree)
-    - [Component Architecture](#component-architecture)
 - [Post-MVP](#post-mvp)
 - [Code Showcase](#code-showcase)
 - [Code Issues & Resolutions](#code-issues--resolutions)
@@ -93,14 +92,44 @@ _The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app. Its backend wi
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Footer.jsx
+      |__ Footer.css
+      |__ Navbar.jsx
+      |__ Navbar.css
+      |__ Layout.jsx
+      |__ Layout.css
+      |__ ScrollToTop.jsx
+      |__ ScrollToTop.css
+      |__ SignOut.jsx
+      |__ SignOut.css
+      |__ StudentCard.jsx
+      |__ StudentCard.css
+|__ containers/
+      |__ MainContainer.jsx
+      |__ MainContainer.css
+|__ screens/
+      |__ Alumni.jsx
+      |__ Alumni.css
+      |__ Home.jsx
+      |__ Home.css
+      |__ Letter.jsx
+      |__ Letter.css
+      |__ LetterPartTwo.jsx
+      |__ LetterPartTwo.css
+      |__ Profile.jsx
+      |__ Profile.css
+      |__ ProfileEdit.jsx
+      |__ ProfileEdit.css
+      |__ SignIn.jsx
+      |__ SignIn.css      
+      |__ SignUp.jsx
+      |__ SignUp.css
 |__ services/
+      |__ apiConfig.jsx
+      |__ authorization.jsx
+      |__ houses.jsx
+      |__ spells.jsx
 
 ```
 
@@ -113,7 +142,7 @@ src
 | README    |    H     |     3 hrs      |     4 hrs     |     hrs    |
 | ERD Model |    H     |     1 hrs      |    .5 hrs     |     hrs     |
 | Component Tree |    H     |     1 hrs      |      hrs     |     hrs     |
-| Component Architecture |    H     |     1 hrs      |      hrs     |     hrs     |
+| Component Architecture |    H     |     1 hrs      |     .5 hrs     |     hrs     |
 | Wireframes |    H     |     3 hrs      |      hrs     |     hrs     |
 | Create and Setting Up Backend |    H     |     1 hrs      |     hrs     |     hrs     |
 | Authorization |    H     |     2 hrs      |     hrs     |     hrs     |
