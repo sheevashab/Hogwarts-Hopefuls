@@ -32,6 +32,7 @@ The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app with at least th
 |  CORS  | _Allows backend database to interact with and be accessed by the frontend._ |
 |      React       | _A JavaScript library that creates a front-end via UI components._ |
 |   React Router Dom  | _Enables dynamic routing for a React app._ |
+|   Axios  | _Sends promise-based, asynchronous HTTP calls from the browser so that the application can perform full CRUD functions._ |
 
 <br>
 
@@ -129,7 +130,7 @@ src
 | Component Tree |    H     |     1 hrs      |     1 hrs     |     hrs     |
 | Component Architecture |    H     |     1 hrs      |     .5 hrs     |     hrs     |
 | Wireframes |    H     |     3 hrs      |     4 hrs     |     hrs     |
-| Create and Setting Up Backend |    H     |     1 hrs      |     hrs     |     hrs     |
+| Create and Setting Up Backend |    H     |     1 hrs      |    .5 hrs     |     hrs     |
 | Authorization |    H     |     2 hrs      |     hrs     |     hrs     |
 | Create Tables |    H     |     1 hrs      |     hrs     |     hrs     |
 | Create Models |    H     |     1 hrs      |     hrs     |     hrs     |
@@ -138,7 +139,7 @@ src
 | Create Routes |    H     |     3 hrs      |     hrs     |     hrs     |
 | Set Up Cors |    H     |     .5 hrs      |     hrs     |     hrs     |
 | Deploy Backend via Heroku |    H     |     1 hrs      |     hrs     |     hrs     |
-| Create React App, Install Dependencies, Set Up Component Architecture |    H     |     1.5 hrs      |     hrs     |     hrs     |
+| Create React App, Install Dependencies, Set Up Component Architecture |    H     |     1.5 hrs      |    .5 hrs     |     hrs     |
 | Code Routes in App.jsx |    H     |     2 hrs      |     hrs     |     hrs     |
 | Code Authorization - Sign In/ Sign Up Forms with Sign Out Component |    H     |     3 hrs      |     hrs     |     hrs     |
 | Code Layout Component |    H     |     2 hrs      |     hrs     |     hrs     |
