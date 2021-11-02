@@ -72,7 +72,7 @@ The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app with at least th
 
 #### Component Tree
 
-[Component Tree](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635817490/Project4_Component_Tree_yhxhws.png)
+![Component Tree](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635817490/Project4_Component_Tree_yhxhws.png)
 
 #### Component Architecture
 
