@@ -10,10 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_02_195008) do
+ActiveRecord::Schema.define(version: 2021_11_02_205219) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "houses", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "spells", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "students", force: :cascade do |t|
+    t.string "pet"
+    t.string "patronus"
+    t.string "img_url"
+    t.bigint "user_id", null: false
+    t.bigint "house_id", null: false
+    t.bigint "spell_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["house_id"], name: "index_students_on_house_id"
+    t.index ["spell_id"], name: "index_students_on_spell_id"
+    t.index ["user_id"], name: "index_students_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -23,4 +51,7 @@ ActiveRecord::Schema.define(version: 2021_11_02_195008) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "students", "houses"
+  add_foreign_key "students", "spells"
+  add_foreign_key "students", "users"
 end
