@@ -131,11 +131,11 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| README    |    H     |     3 hrs      |     4 hrs     |     hrs    |
+| README    |    H     |     3 hrs      |     3 hrs     |     hrs    |
 | ERD Model |    H     |     1 hrs      |    .5 hrs     |     hrs     |
 | Component Tree |    H     |     1 hrs      |      hrs     |     hrs     |
 | Component Architecture |    H     |     1 hrs      |     .5 hrs     |     hrs     |
-| Wireframes |    H     |     3 hrs      |      hrs     |     hrs     |
+| Wireframes |    H     |     3 hrs      |     4 hrs     |     hrs     |
 | Create and Setting Up Backend |    H     |     1 hrs      |     hrs     |     hrs     |
 | Authorization |    H     |     2 hrs      |     hrs     |     hrs     |
 | Create Tables |    H     |     1 hrs      |     hrs     |     hrs     |
