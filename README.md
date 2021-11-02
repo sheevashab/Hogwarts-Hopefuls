@@ -163,7 +163,7 @@ src
 ### Server (Back End)
 
 #### ERD Model
-![ERD Sample](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635809676/hogwarts_hopefuls_ERD_pqpbbh.png)
+![ERD Sample](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635882647/ERD_2.crswap.drawio_izavfd.png)
 <br>
 
 ***
