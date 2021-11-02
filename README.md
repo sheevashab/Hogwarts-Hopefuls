@@ -39,47 +39,35 @@ The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app with at least th
 
 #### Wireframes
 
-<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813047/Project_4_team_library_zejdsi.jpg" width="350">
 - Mobile Landing Page
-
-<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813126/Mobile_Alumni_crkns7.jpg" width="350">
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813047/Project_4_team_library_zejdsi.jpg" width="350">
 
 - Mobile Alumni Page
-
-![SignUp](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813211/Mobile_SignUp_vg0wpw.jpg)
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813126/Mobile_Alumni_crkns7.jpg" width="350">
 
 - Mobile Sign Up Page
-
-![SignIn](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813341/Mobile_SignIn_nsqrcb.jpg)
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813211/Mobile_SignUp_vg0wpw.jpg" width="350">
 
 - Mobile Sign In Page
-
-![HogwartsLetter](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813346/Mobile_HogwartsLetter_wk8ea7.jpg)
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813341/Mobile_SignIn_nsqrcb.jpg" width="350">
 
 - Mobile Hogwarts Acceptance Letter
-
-![HogwartsLetterPartTwo](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813346/Mobile_HogwartsLetterPartTwo_d2kc9y.jpg)
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813346/Mobile_HogwartsLetter_wk8ea7.jpg" width="350">
 
 - Mobile Hogwarts House Sorting and Spell Assignment
-
-
-![Profile](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813683/Mobile_Profile_vemwfd.jpg)
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813346/Mobile_HogwartsLetterPartTwo_d2kc9y.jpg" width="350">
 
 - Mobile Student Profile
-
-
-![ProfileEdit](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813683/Mobile_ProfileEdit_lo53nn.jpg)
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813683/Mobile_Profile_vemwfd.jpg" width="350">
 
 - Mobile Edit Student Profile
-
-![Alumni](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813801/Tablet_Alumni_ofjlph.jpg)
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813683/Mobile_ProfileEdit_lo53nn.jpg" width="350">
 
 - Tablet Alumni Page
-
-
-![Alumni](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813808/Desktop_Alumni_bfygrh.jpg)
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813801/Tablet_Alumni_ofjlph.jpg" width="350">
 
 - Desktop Alumni Page
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813808/Desktop_Alumni_bfygrh.jpg" width="350">
 
 
 #### Component Tree
