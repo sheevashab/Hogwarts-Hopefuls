@@ -1,37 +1,29 @@
 # Hogwarts-Hopefuls README <!-- omit in toc -->
-- [Overview](#overview)
-- [MVP](#mvp)
-  - [Goals](#goals)
-  - [Libraries and Dependencies](#libraries-and-dependencies)
   - [Client (Front End)](#client-front-end)
     - [Wireframes](#wireframes)
     - [Component Tree](#component-tree)
 - [Post-MVP](#post-mvp)
-- [Code Showcase](#code-showcase)
-- [Code Issues & Resolutions](#code-issues--resolutions)
 
 <br>
 
 ## Overview
 
-_**Hogwarts Hopefuls** is a full-stack app where users can sign up for an added touch of magic to their lives. The app will sort the user into their respective Hogwarts house based on their answer to a riddle. Each student, or user, can also select their pet, patronus, and specialty spell._
-
+**Hogwarts Hopefuls** is an app where users can sign up for an added touch of magic in their lives. Once an account is creacted, the user (aka future Hogwarts student) will recieve their Hogwarts acceptance letter, be sorted into their respective Hogwarts house based on their answer to a question, and be assigned a signature spell. Additionally, students can select to have a pet and a patronus.
 
 <br>
 
 ## MVP
 
-_The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app. Its backend will employ full CRUD via Ruby on Rails, while its frontend will be a React App with full CRUD._
+The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app with at least three tables and one association. Its backend will employ full CRUD via Ruby on Rails (deployment via Heroku), while its frontend will be a React App with full CRUD (deployment via Netlify). It will have 2 media queries for responsive design.
 
 <br>
 
 ### Goals
 
-- _Full-stack, React on Rails application_
-- _Full CRUD functionality on backend and frontend_
-- _RESTful JSON API with at least 3 tables and 1 association_
-- _Employ 2 media queries for responsive design_
-- _Deploy via Heroky and Netlify_
+- Full CRUD functionality on backend and frontend
+- Backend database will consist of 3 tables and 2 one-to-one associations
+- Flexbox for responsive design
+- Cohesive design aesthetic via CSS
 
 <br>
 
@@ -41,11 +33,11 @@ _The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app. Its backend wi
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|     bcrypt      | _Hashes passwords for user security._ |
+|  JWT  | _Encodes and decodes JSON Web Tokens._ |
+|  CORS  | _Allows backend database to interact with and be accessed by the frontend._ |
+|      React       | _A JavaScript library that creates a front-end via UI components._ |
+|   React Router Dom  | _Enables dynamic routing for a React app._ |
 
 <br>
 
