@@ -1,6 +1,4 @@
 # Hogwarts-Hopefuls README <!-- omit in toc -->
-    - [Component Tree](#component-tree)
-- [Post-MVP](#post-mvp)
 
 <br>
 
@@ -27,8 +25,6 @@ The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app with at least th
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |     bcrypt      | _Hashes passwords for user security._ |
@@ -43,15 +39,10 @@ The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app with at least th
 
 #### Wireframes
 
-
-
-![HomePage](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813047/Project_4_team_library_zejdsi.jpg | width=100)
-
-)
-<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813047/Project_4_team_library_zejdsi.jpg" width="100">
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813047/Project_4_team_library_zejdsi.jpg" width="350">
 - Mobile Landing Page
 
-![Alumni](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813126/Mobile_Alumni_crkns7.jpg)
+<img src="https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813126/Mobile_Alumni_crkns7.jpg" width="350">
 
 - Mobile Alumni Page
 
