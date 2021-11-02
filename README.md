@@ -1,6 +1,4 @@
 # Hogwarts-Hopefuls README <!-- omit in toc -->
-  - [Client (Front End)](#client-front-end)
-    - [Wireframes](#wireframes)
     - [Component Tree](#component-tree)
 - [Post-MVP](#post-mvp)
 
@@ -49,27 +47,47 @@ The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app with at least th
 
 ![HomePage](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813047/Project_4_team_library_zejdsi.jpg)
 
-- Mobile Landing
+- Mobile Landing Page
 
-![Dummy Link](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813126/Mobile_Alumni_crkns7.jpg)
+![Alumni](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813126/Mobile_Alumni_crkns7.jpg)
 
-- Mobile Alumni
+- Mobile Alumni Page
 
-![Dummy Link](url)
+![SignUp](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813211/Mobile_SignUp_vg0wpw.jpg)
 
-- Resource Index
+- Mobile Sign Up Page
 
-![Dummy Link](url)
+![SignIn](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813341/Mobile_SignIn_nsqrcb.jpg)
 
-- Resource Show
+- Mobile Sign In Page
 
-![Dummy Link](url)
+![HogwartsLetter](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813346/Mobile_HogwartsLetter_wk8ea7.jpg)
 
-- Tablet Resource Index
+- Mobile Hogwarts Acceptance Letter
 
-![Dummy Link](url)
+![HogwartsLetterPartTwo](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813346/Mobile_HogwartsLetterPartTwo_d2kc9y.jpg)
 
-- Mobile Resource Index
+- Mobile Hogwarts House Sorting and Spell Assignment
+
+
+![Profile](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813683/Mobile_Profile_vemwfd.jpg)
+
+- Mobile Student Profile
+
+
+![ProfileEdit](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813683/Mobile_ProfileEdit_lo53nn.jpg)
+
+- Mobile Edit Student Profile
+
+![Alumni](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813801/Tablet_Alumni_ofjlph.jpg)
+
+- Tablet Alumni Page
+
+
+![Alumni](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813808/Desktop_Alumni_bfygrh.jpg)
+
+- Desktop Alumni Page
+
 
 #### Component Tree
 
