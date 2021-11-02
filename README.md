@@ -47,13 +47,13 @@ The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app with at least th
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+![HomePage](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813047/Project_4_team_library_zejdsi.jpg)
 
-- Desktop Landing
+- Mobile Landing
 
-![Dummy Link](url)
+![Dummy Link](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635813126/Mobile_Alumni_crkns7.jpg)
 
-- Desktop Hero
+- Mobile Alumni
 
 ![Dummy Link](url)
 
