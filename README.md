@@ -131,13 +131,12 @@ src
 | Component Architecture |    H     |     1 hrs      |     .5 hrs     |     hrs     |
 | Wireframes |    H     |     3 hrs      |     4 hrs     |     hrs     |
 | Create and Setting Up Backend |    H     |     1 hrs      |    .5 hrs     |     hrs     |
-| Authorization |    H     |     2 hrs      |     hrs     |     hrs     |
-| Create Tables |    H     |     1 hrs      |     hrs     |     hrs     |
-| Create Models |    H     |     1 hrs      |     hrs     |     hrs     |
-| Seed Data |    H     |     2 hrs      |     hrs     |     hrs     |
-| Create Controllers |    H     |     3 hrs      |     hrs     |     hrs     |
-| Create Routes |    H     |     3 hrs      |     hrs     |     hrs     |
-| Set Up Cors |    H     |     .5 hrs      |     hrs     |     hrs     |
+| Authorization |    H     |     2 hrs      |    1 hrs     |     hrs     |
+| Create Tables |    H     |     1 hrs      |    .5 hrs     |     hrs     |
+| Create Models |    H     |     1 hrs      |    .5 hrs     |     hrs     |
+| Seed Data |    H     |     2 hrs      |    1 hrs     |     hrs     |
+| Create Controllers |    H     |     3 hrs      |    1 hrs     |     hrs     |
+| Create Routes |    H     |     3 hrs      |    1 hrs     |     hrs     |
 | Deploy Backend via Heroku |    H     |     1 hrs      |     hrs     |     hrs     |
 | Create React App, Install Dependencies, Set Up Component Architecture |    H     |     1.5 hrs      |    .5 hrs     |     hrs     |
 | Code Routes in App.jsx |    H     |     2 hrs      |     hrs     |     hrs     |
@@ -163,7 +162,7 @@ src
 ### Server (Back End)
 
 #### ERD Model
-![ERD Sample](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635882647/ERD_2.crswap.drawio_izavfd.png)
+![ERD Sample](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635902039/ERD_2.crswap.drawio_gs9uvt.png)
 <br>
 
 ***
@@ -171,6 +170,7 @@ src
 ## Post-MVP
 
 > My Post-MVP for this project would be expanding on its functionality. I think it would be a more useful app if the users could accomplish more during their visit. For example, I would like to expand the sorting hat questionairre to more than a question. I would also like to make a quiz to assign the specialty spell and patronus. 
+I would also like to make a 'Common Room', or a space for students of the same house to find each other.
 
 ***
 
