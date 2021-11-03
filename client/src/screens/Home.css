@@ -1,0 +1,19 @@
+.home-background {
+  background-color: #1C1C18;
+  height: 100%;
+  margin: 15px;
+  width: 100%;
+}
+
+.home-container {
+  background-color: #B79B48;
+  height: 75vw;
+  width: 75vw;
+}
+
+.home-page {
+  width: 50vw;
+}
+.home-intro {
+  font-family: 'Irish Grover', cursive;;
+}

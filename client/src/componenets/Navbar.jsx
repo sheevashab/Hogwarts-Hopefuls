@@ -15,10 +15,10 @@ export default function Navbar({ currentUser, handleSignOut }) {
   )
   return (
     <nav>
-      <div className="nav">
-        <NavLink className='navbar-logo' to='/'>Hogwarts Hopefuls</NavLink>
+      <div className="navbar">
+        <NavLink className='navbar-logo' to='/'>Hogwarts<br />Hopefuls</NavLink>
         <div className='navbar-links-container'>
-          <NavLink to='/alumni'>alumni</NavLink>
+          <NavLink className="navbar-link" to='/alumni'>alumni</NavLink>
           {currentUser ? authenticatedOptions : unauthenticatedOptions}
         </div>
       </div>

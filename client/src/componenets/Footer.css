@@ -1,3 +1,28 @@
+footer {
+  display: flex;
+  width: 100vw;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  padding: 2vh 0;
+}
+
+.footer-container {
+  background-color: #b79b484b;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo{
+  color: #B79B48;
+  font-family: 'Irish Grover', cursive;
+  font-size: 36px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
 .github-logo{
-  height: 15px;
+  width: 75px;
 }

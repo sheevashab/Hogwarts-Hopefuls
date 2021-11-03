@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  
+  background: transparent;  
+}
+
+a {
+  color: black;
+}
