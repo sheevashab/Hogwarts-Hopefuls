@@ -1,19 +1,18 @@
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
-const authenticatedOptions = (
-  <>
-    <NavLink className="navbar-link" id="profile-link" to="/student-profile">profile</NavLink>
-    <NavLink className="navbar-link" id="sign-out-link" to="/sign-out">sign out</NavLink>
-  </>
-)
-const unauthenticatedOptions = (
-  <>
-    <NavLink className="navbar-link" id="sign-in-link" to="/sign-in">sign in</NavLink>
-  </>
-)
-
-export default function Navbar({ currentUser }) {
+export default function Navbar({ currentUser, handleSignOut }) {
+  const authenticatedOptions = (
+    <>
+      <NavLink className="navbar-link" id="profile-link" to="/student-profile">profile</NavLink>
+      <Link className="navbar-link" onClick={handleSignOut} to='/'>sign out</Link>
+    </>
+  )
+  const unauthenticatedOptions = (
+    <>
+      <NavLink className="navbar-link" id="sign-in-link" to="/sign-in">sign in</NavLink>
+    </>
+  )
   return (
     <nav>
       <div className="nav">

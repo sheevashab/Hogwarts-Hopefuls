@@ -3,6 +3,7 @@ import Layout from './componenets/Layout';
 import SignIn from './screens/SignIn';
 import SignUp from './screens/SignUp';
 import Home from './screens/Home';
+import Alumni from './screens/Alumni'
 import MainContainer from './containers/MainContainer'
 import { signInUser, signUpUser, verifyUser, removeToken } from './services/authorization';
 
@@ -37,19 +38,23 @@ function App() {
     setCurrentUser(null);
     localStorage.removeItem('authToken');
     removeToken();
+    history.push('/');
   };
+
   return (
     <div className="App">
       <Layout currentUser={currentUser} handleSignOut={handleSignOut}>
-        {currentUser || 'no user'}
         <Switch>
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route path='/sign-in'>
+          <Route exact path='/alumni'>
+            <Alumni />
+          </Route>
+          <Route exact path='/sign-in'>
             <SignIn handleSignIn={handleSignIn} />
           </Route>
-          <Route path='/sign-up'>
+          <Route exact path='/sign-up'>
             <SignUp handleSignUp={handleSignUp} />
           </Route>
           <Route path='/'>
