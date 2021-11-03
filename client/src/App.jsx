@@ -1,11 +1,11 @@
 import './App.css';
+import Layout from './componenets/Layout';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>React is up and running</p>
-      </header>
+      <Layout>
+      </Layout>
     </div>
   );
 }
