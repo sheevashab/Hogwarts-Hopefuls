@@ -2,6 +2,7 @@ import './App.css';
 import Layout from './componenets/Layout';
 import SignIn from './screens/SignIn';
 import SignUp from './screens/SignUp';
+import Home from './screens/Home';
 import MainContainer from './containers/MainContainer'
 import { signInUser, signUpUser, verifyUser, removeToken } from './services/authorization';
 
@@ -40,7 +41,11 @@ function App() {
   return (
     <div className="App">
       <Layout currentUser={currentUser} handleSignOut={handleSignOut}>
+        {currentUser || 'no user'}
         <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
           <Route path='/sign-in'>
             <SignIn handleSignIn={handleSignIn} />
           </Route>

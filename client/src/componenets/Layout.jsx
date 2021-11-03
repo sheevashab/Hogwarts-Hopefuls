@@ -4,7 +4,7 @@ import Footer from './Footer';
 export default function Layout(props) {
   return (
     <div>
-      <Navbar user={props.user} />
+      <Navbar user={props.currentUser} />
       <div className='layout-children'>
         {props.children}
       </div>
