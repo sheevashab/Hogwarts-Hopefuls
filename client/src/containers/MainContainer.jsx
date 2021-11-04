@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 
-import { getAllHouses, getOneHouse } from '../services/houses';
-import { getAllSpells, getOneSpell } from '../services/spells';
+import { getAllHouses } from '../services/houses';
+import { getAllSpells } from '../services/spells';
 import { getAllStudents, getOneStudent, postStudent, putStudent, deleteStudent, addHouseToStudent, addSpellToStudent } from '../services/students';
 
 import Home from '../screens/Home';
@@ -14,8 +14,8 @@ import ProfileEdit from '../screens/ProfileEdit';
 
 export default function MainContainer() {
   const [students, setStudents] = useState([]);
-  const [house, setHouse] = useState([]);
-  const [spell, setSpell] = useState([]);
+  const [houses, setHouses] = useState([]);
+  const [spells, setSpells] = useState([]);
   const history = useHistory();
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function MainContainer() {
   useEffect(() => {
     const fetchHouses = async () => {
       const houseList = await getAllHouses();
-      setHouse(houseList);
+      setHouses(houseList);
     };
     fetchHouses();
   }, []);
@@ -37,7 +37,7 @@ export default function MainContainer() {
   useEffect(() => {
     const fetchSpells = async () => {
       const spellList = await getAllSpells();
-      setSpell(spellList);
+      setSpells(spellList);
     };
     fetchSpells();
   }, []);
@@ -51,12 +51,11 @@ export default function MainContainer() {
 
   return (
     <Switch>
-      <h1>Main Container</h1>
       <Route exact path='/home'>
         <Home />
       </Route>
       <Route exact path='/alumni'>
-        <Alumni students={students} />
+        <Alumni students={students} spells={spells} houses={houses} />
       </Route>
       <Route exact path='/letter'>
         <Letter />

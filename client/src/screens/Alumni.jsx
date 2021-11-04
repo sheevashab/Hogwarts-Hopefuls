@@ -1,13 +1,13 @@
 export default function Alumni(props) {
-  const { students } = props;
+  const { students, spells, houses } = props;
   return (
     <div>
       <h3>Your Fellow Students</h3>
       {students.map((student) => (
         <div key={student.id}>
-          <p>{student.user}</p>
-          <p>{student.house}</p>
-          <p>{student.spell}</p>
+          <p>{student.user_id}</p>
+          <p>{houses.find((house) => house.id === student.house_id)?.name}</p>
+          <p>{spells.find((spell) => spell.id === student.spell_id)?.name}</p>
           <p>{student.patronus}</p>
           <p>{student.pet}</p>
           <button>edit</button>
