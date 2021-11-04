@@ -40,7 +40,7 @@ export default function Profile(props) {
           Patronus:
           <input type='text' value={patronus} onChange={handleChange} />
         </label>
-        <button>Save</button>
+        <button>Edit</button>
         <button>Delete</button>
       </form>
     </div>

@@ -1,18 +1,34 @@
 footer {
-  display: flex;
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
   width: 100vw;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  padding: 2vh 0;
+  height: 100px;
 }
 
 .footer-container {
   background-color: #b79b484b;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.footer-section-one{
+  display: flex;
+}
+
+.footer-section-two{
+  display: flex;
+}
+
+.footer-section-three{
+  display: flex;
+}
+
+.footer-stars {
+  width: 50px;
 }
 
 .footer-logo{
@@ -24,5 +40,7 @@ footer {
 }
 
 .github-logo{
+  display: flex;
+  align-self: center;
   width: 75px;
 }

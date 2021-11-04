@@ -2,7 +2,6 @@ import api from './apiConfig';
 
 export const getAllStudents = async () => {
   const resp = await api.get('/students');
-  console.log(resp.data);
   return resp.data;
 }
 

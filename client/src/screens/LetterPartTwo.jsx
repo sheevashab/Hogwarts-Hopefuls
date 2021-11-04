@@ -3,7 +3,8 @@
 
 export default function LetterPartTwo() {
 
-  // useEffect for getting one user/student
+  // useEffect for getting one user
+  // student
 
   //onClick
 
@@ -15,5 +16,7 @@ export default function LetterPartTwo() {
       <button>Grass</button>
       <button>Rotten Egg</button>
     </p>
+
+    //Redirect to Profile
   )
 }
