@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 export default function Letter() {
+
+  //create one student that belongs to user
   return (
     <>
       <p>

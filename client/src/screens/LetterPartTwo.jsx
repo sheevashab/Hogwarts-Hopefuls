@@ -3,10 +3,12 @@
 
 export default function LetterPartTwo() {
 
-  // useEffect for getting one user
-  // student
+  // add attributes to user - house and specialty spell
 
-  //onClick
+  //onClick for house assignment 
+
+  //onClick for specialty spell assignment
+
 
   return (
     <p>
@@ -17,6 +19,6 @@ export default function LetterPartTwo() {
       <button>Rotten Egg</button>
     </p>
 
-    //Redirect to Profile
+    //Redirect to Profile edit
   )
 }
