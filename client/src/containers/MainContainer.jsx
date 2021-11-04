@@ -26,6 +26,12 @@ export default function MainContainer() {
     fetchStudents();
   }, []);
 
+  const handleStudentCreate = async (formData) => {
+    const newStudent = await postStudent(formData);
+    setStudents((prevState) => [...prevState, newStudent]);
+    history.push('/profile');
+  };
+
   return (
     <Switch>
       <Route exact path='/home'>
@@ -38,12 +44,12 @@ export default function MainContainer() {
         <Letter />
       </Route>
       <Route exact path='/sorting'>
-        <LetterPartTwo />
+        <LetterPartTwo handleStudentCreate={handleStudentCreate} />
       </Route>
-      <Route exact path='/alumni/:id'>
+      <Route exact path='/profile/:id'>
         <Profile />
       </Route>
-      <Route exact path='/alumni/:id/edit'>
+      <Route exact path='/profile/:id/edit'>
         <ProfileEdit />
       </Route>
     </Switch>

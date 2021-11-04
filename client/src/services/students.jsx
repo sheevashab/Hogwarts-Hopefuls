@@ -6,31 +6,31 @@ export const getAllStudents = async () => {
 }
 
 export const getOneStudent = async (id) => {
-  const resp = await api.get(`/alumni/${id}`);
+  const resp = await api.get(`/profile/${id}`);
   return resp.data;
 }
 
 export const postStudent = async (studentData) => {
-  const resp = await api.post('/alumni', { student: studentData });
+  const resp = await api.post('/profile', { student: studentData });
   return resp.data;
 }
 
 export const putStudent = async (id, studentData) => {
-  const resp = await api.put(`/alumni/${id}`, { student: studentData });
+  const resp = await api.put(`/profile/${id}`, { student: studentData });
   return resp.data;
 };
 
 export const deleteStudent = async (id) => {
-  const resp = await api.delete(`/alumni/${id}`);
+  const resp = await api.delete(`/profile/${id}`);
   return resp;
 };
 
 export const addHouseToStudent = async (houseId, id) => {
-  const resp = await api.put(`/sorting/house/${houseId}/alumni/${id}`);
+  const resp = await api.put(`/sorting/house/${houseId}/profile/${id}`);
   return resp.data;
 }
 
 export const addSpellToStudent = async (spellId, id) => {
-  const resp = await api.put(`/sorting/spell/${spellId}/alumni/${id}`);
+  const resp = await api.put(`/sorting/spell/${spellId}/profile/${id}`);
   return resp.data;
 }
