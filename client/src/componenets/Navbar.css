@@ -30,7 +30,6 @@ nav {
   display: flex;
   flex-direction: column;
   margin-right: 15px;
-  width: 50vw;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -42,13 +41,19 @@ nav {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 750px) {
+
+  .navbar-logo {
+    margin-left: 30px;
+  }
 
   .navbar-links-container {
     display: flex;
-    margin-right: 15px;
+    flex-direction: row;
+    margin-right: 30px;
     width: 50vw;
     justify-content: space-between;
-    align-items: flex-end;
+    align-self: flex-end;
+    margin-bottom: 20px;
 }
 }

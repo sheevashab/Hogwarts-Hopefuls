@@ -1,3 +1,23 @@
-.sign-in-form {
-  margin-top: 1000px;
+.sign-in-container {
+  background-color: #1c1c18;
+  color: #f6f6f8;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+ background-color: #B79B48;
+ font-family: 'Poiret One', cursive;
+ text-align: center;
+ width: 50vw;
+}
+
+.sign-in-intro {
+  font-family: 'Irish Grover', cursive;
+  font-size: 32px;
+}
+
+.sign-in-message {
+  font-size: 18px;
 }
