@@ -4,6 +4,7 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 import { getAllHouses } from '../services/houses';
 import { getAllSpells } from '../services/spells';
 import { getAllStudents, getOneStudent, postStudent, putStudent, deleteStudent, addHouseToStudent, addSpellToStudent } from '../services/students';
+import { getAllUsers } from '../services/users';
 
 import Home from '../screens/Home';
 import Alumni from '../screens/Alumni';
@@ -16,7 +17,16 @@ export default function MainContainer() {
   const [students, setStudents] = useState([]);
   const [houses, setHouses] = useState([]);
   const [spells, setSpells] = useState([]);
+  const [users, setUsers] = useState([]);
   const history = useHistory();
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      const userList = await getAllUsers();
+      setUsers(userList);
+    };
+    fetchUsers();
+  }, []);
 
   useEffect(() => {
     const fetchStudents = async () => {
@@ -55,7 +65,7 @@ export default function MainContainer() {
         <Home />
       </Route>
       <Route exact path='/alumni'>
-        <Alumni students={students} spells={spells} houses={houses} />
+        <Alumni students={students} spells={spells} houses={houses} users={users} />
       </Route>
       <Route exact path='/letter'>
         <Letter />
