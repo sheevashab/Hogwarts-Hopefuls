@@ -26,11 +26,11 @@ export const deleteStudent = async (id) => {
 };
 
 export const addHouseToStudent = async (houseId, id) => {
-  const resp = await api.put(`/sorting/house/${houseId}/profile/${id}`);
+  const resp = await api.put(`/sorting/houses/${houseId}/profile/${id}`);
   return resp.data;
 }
 
 export const addSpellToStudent = async (spellId, id) => {
-  const resp = await api.put(`/sorting/spell/${spellId}/profile/${id}`);
+  const resp = await api.put(`/sorting/spells/${spellId}/profile/${id}`);
   return resp.data;
 }
