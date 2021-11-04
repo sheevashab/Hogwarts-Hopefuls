@@ -61,10 +61,10 @@ function App() {
           <Route exact path='/sorting'>
             <LetterPartTwo />
           </Route>
-          <Route exact path='/profile'>
+          <Route exact path='/alumni/:id'>
             <Profile />
           </Route>
-          <Route exact path='/profile-edit'>
+          <Route exact path='/alumni/:id/edit'>
             <ProfileEdit />
           </Route>
           <Route exact path='/sign-in'>
