@@ -1,3 +1,5 @@
+import './ProfileEdit.css'
+import './Profile.css'
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -32,39 +34,57 @@ export default function ProfileEdit(props) {
   };
 
   return (
-    <div>
-      <h1>Profile Edit</h1>
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        handleStudentUpdate(formData)
-        history.push('/profile')
-      }}>
-        <label>
-          Name:
-          <input type='text' value={currentStudent?.user.username} />
-        </label>
-        <label>
-          Pet:
-          <input type='text' name='pet' value={pet} onChange={handleChange} />
-        </label>
-        <label>
-          Patronus:
-          <input type='text' name='patronus' value={patronus} onChange={handleChange} />
-        </label>
-        <label>
-          Image:
-          <input type='text' name='img_url' value={img_url} onChange={handleChange} />
-        </label>
-        <label>
-          House:
-          <input type='text' value={currentStudent?.house.name} />
-        </label>
-        <label>
-          Spell:
-          <input type='text' value={currentStudent?.spell.name} />
-        </label>
-        <button>Save</button>
-      </form>
+    <div className='profile-container'>
+      <div className='profile-card'>
+        <div className='profile-info'>
+          <form onSubmit={(e) => {
+            e.preventDefault();
+            handleStudentUpdate(formData)
+            history.push('/profile')
+          }}>
+            <div>
+              <img className='profile-pic' src={currentStudent?.img_url} />
+            </div>
+            <div>
+              <label>
+                Student Photo:
+                <input className='profile-input' type='text' name='img_url' value={img_url} onChange={handleChange} />
+              </label>
+            </div>
+            <div>
+              <label>
+                Name:
+                <input className='profile-input' type='text' value={currentStudent?.user.username} />
+              </label>
+            </div>
+            <div>
+              <label>
+                House:
+                <input className='profile-input' type='text' value={currentStudent?.house.name} />
+              </label>
+            </div>
+            <div>
+              <label>
+                Spell:
+                <input className='profile-input' type='text' value={currentStudent?.spell.name} />
+              </label>
+            </div>
+            <div>
+              <label>
+                Patronus:
+                <input className='profile-input' type='text' name='patronus' value={patronus} onChange={handleChange} />
+              </label>
+            </div>
+            <div>
+              <label>
+                Pet:
+                <input className='profile-input' type='text' name='pet' value={pet} onChange={handleChange} />
+              </label>
+            </div>
+            <button>Save</button>
+          </form>
+        </div>
+      </div>
     </div>
   )
 }

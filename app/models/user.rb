@@ -7,4 +7,9 @@ class User < ApplicationRecord
   validates :password, length: {minimum: 8}
 
   has_one :student
+
+  def has_student
+    !!student
+  end
+
 end

@@ -1,11 +1,12 @@
 class StudentsController < ApplicationController
-  before_action :set_student, only: [:show, :update, :destroy]
+  before_action :set_student, only: [:show, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy, :user_show]
 
   # GET /students
   def index
     @students = Student.all
 
-    render json: @students
+    render json: @students, include:[:house, :spell, {user:{only: :username}}]
   end
 
   # GET /students/1
@@ -13,12 +14,19 @@ class StudentsController < ApplicationController
     render json: @student
   end
 
+  def user_show
+    @student = @current_user.student
+    render json: @student, include:[:house, :spell, {user:{only: :username}}]
+  end
   # POST /students
   def create
     @student = Student.new(student_params)
+    @student.user = @current_user
+    @student.spell = Spell.all.sample
+    
 
     if @student.save
-      render json: @student, status: :created, location: @student
+      render json: @student, include:[:house, :spell, {user:{only: :username}}], status: :created
     else
       render json: @student.errors, status: :unprocessable_entity
     end
@@ -26,8 +34,9 @@ class StudentsController < ApplicationController
 
   # PATCH/PUT /students/1
   def update
+    @student = @current_user.student
     if @student.update(student_params)
-      render json: @student
+      render json: @student, include:[:house, :spell, {user:{only: :username}}]
     else
       render json: @student.errors, status: :unprocessable_entity
     end

@@ -1,10 +1,10 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update, :destroy]
-  before_action :authorize_request, except: :create
+  before_action :authorize_request, except: [:index, :create]
 
   # GET /users
   def index
-    @users = User.all
+    @users = User.pluck(:username, :id)
 
     render json: @users
   end
@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     if @user.save
       @token = encode({id: @user.id})
       render json: {
-        user: @user.attributes.except("password_digest"),
+        user: @user.as_json({except: :password_digest, methods: :has_student}),
         token: @token
         }, status: :created
     else
