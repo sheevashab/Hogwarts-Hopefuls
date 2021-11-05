@@ -1,0 +1,33 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 10px;
+}
+
+.profile-card {
+  background-color: #1C1C18;
+  color: #F6F6F8;
+  font-family: 'Poiret One', cursive;
+  font-weight: 700;
+}
+
+.profile-pic {
+  border-radius: 50px;
+  width: 200px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile-input {
+  background-color: transparent;
+  border-bottom: 2px solid #F6F6F8;
+  color: #F6F6F8;
+  font-family: 'Poiret One', cursive;
+  font-weight: 600;
+  margin: 10px;
+}

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 export default function ProfileEdit(props) {
   const [formData, setFormData] = useState({
@@ -7,9 +7,9 @@ export default function ProfileEdit(props) {
     patronus: '',
     pet: '',
   });
+  const history = useHistory();
 
   const { img_url, patronus, pet } = formData;
-  const { id } = useParams();
   const { handleStudentUpdate, currentStudent } = props;
 
   useEffect(() => {
@@ -37,6 +37,7 @@ export default function ProfileEdit(props) {
       <form onSubmit={(e) => {
         e.preventDefault();
         handleStudentUpdate(formData)
+        history.push('/profile')
       }}>
         <label>
           Name:

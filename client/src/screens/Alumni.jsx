@@ -1,5 +1,5 @@
 export default function Alumni(props) {
-  const { students, spells, houses, users } = props;
+  const { students } = props;
   return (
     <div>
       <h3>Your Fellow Students</h3>

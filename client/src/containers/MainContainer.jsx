@@ -3,8 +3,7 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 
 import { getAllHouses } from '../services/houses';
 import { getAllSpells } from '../services/spells';
-import { getAllStudents, getOneStudent, postStudent, putStudent, deleteStudent, getUsersStudent } from '../services/students';
-// import { addHouseToStudent, addSpellToStudent } from '../services/students';
+import { getAllStudents, postStudent, putStudent, deleteStudent, getUsersStudent } from '../services/students';
 import { getAllUsers } from '../services/users';
 
 import Home from '../screens/Home';
@@ -86,7 +85,7 @@ export default function MainContainer(props) {
   return (
     <Switch>
       <Route path='/alumni'>
-        <Alumni students={students} spells={spells} houses={houses} users={users} />
+        <Alumni students={students} />
       </Route>
       <Route path='/letter'>
         <Letter currentUser={currentUser} />
