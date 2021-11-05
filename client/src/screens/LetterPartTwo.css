@@ -1,0 +1,15 @@
+.sorting-letter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Tangerine', cursive;
+  font-size: 24px;
+  line-height: 1.9;
+  justify-items: center;
+  justify-content: space-between;
+  background-image: url("https://res.cloudinary.com/dyyjvyqtn/image/upload/v1636132712/Parchment-Vector_pgvopc.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 25px;
+}

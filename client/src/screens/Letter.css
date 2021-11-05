@@ -8,6 +8,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  padding: 25px;
+  width: 75vw;
   /* height: 90vh; */
 }
 
@@ -19,7 +21,7 @@
   line-height: 1.9;
   margin-top: 50px;
   max-width: 50vw;
-  /* width: 40vw; */
+  width: 40vw;
 }
 
 .acceptance-letter-button{

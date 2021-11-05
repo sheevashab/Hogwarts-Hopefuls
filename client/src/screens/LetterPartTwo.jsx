@@ -1,3 +1,5 @@
+import './LetterPartTwo.css'
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -6,7 +8,7 @@ export default function LetterPartTwo(props) {
   const { handleStudentCreate, currentStudent } = props;
 
   return (
-    <div>
+    <div className='sorting-letter-container'>
       If you could be a flavor of Bertie Bott's Every Flavor Beans, which would you be?
       <button onClick={() => handleStudentCreate({ house_id: 4 })}>Earthworm</button>
       <button onClick={() => handleStudentCreate({ house_id: 2 })}>Earwax</button>
@@ -23,7 +25,5 @@ export default function LetterPartTwo(props) {
         </div>}
       </div>}
     </div>
-
-    //Redirect to Profile edit
   )
 }
