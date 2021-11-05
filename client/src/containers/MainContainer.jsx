@@ -3,7 +3,8 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 
 import { getAllHouses } from '../services/houses';
 import { getAllSpells } from '../services/spells';
-import { getAllStudents, getOneStudent, postStudent, putStudent, deleteStudent, addHouseToStudent, addSpellToStudent } from '../services/students';
+import { getAllStudents, getOneStudent, postStudent, putStudent, deleteStudent } from '../services/students';
+// import { addHouseToStudent, addSpellToStudent } from '../services/students';
 import { getAllUsers } from '../services/users';
 
 import Home from '../screens/Home';
@@ -18,6 +19,7 @@ export default function MainContainer() {
   const [houses, setHouses] = useState([]);
   const [spells, setSpells] = useState([]);
   const [users, setUsers] = useState([]);
+  const [currentUser, setCurrentUser] = useState([]);
   const history = useHistory();
 
   useEffect(() => {
@@ -55,8 +57,8 @@ export default function MainContainer() {
 
   const handleStudentCreate = async (formData) => {
     const newStudent = await postStudent(formData);
-    setStudents((prevState) => [...prevState, newStudent]);
-    history.push('/alumni');
+    setCurrentUser((prevState) => [...prevState, newStudent]);
+    history.push('/letter');
   };
 
   return (
@@ -68,10 +70,10 @@ export default function MainContainer() {
         <Alumni students={students} spells={spells} houses={houses} users={users} />
       </Route>
       <Route exact path='/letter'>
-        <Letter />
+        <Letter currentUser={setCurrentUser} handleStudentCreate={handleStudentCreate} />
       </Route>
       <Route exact path='/sorting'>
-        <LetterPartTwo handleStudentCreate={handleStudentCreate} />
+        <LetterPartTwo />
       </Route>
       <Route exact path='/profile/:id/edit'>
         <ProfileEdit />
