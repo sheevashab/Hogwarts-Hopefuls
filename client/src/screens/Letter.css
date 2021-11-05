@@ -1,0 +1,32 @@
+.acceptance-letter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  background-image: url("https://res.cloudinary.com/dyyjvyqtn/image/upload/v1636132712/Parchment-Vector_pgvopc.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* height: 90vh; */
+}
+
+.acceptance-letter {
+  display: flex;
+  text-align: center ;
+  font-family: 'Tangerine', cursive;
+  font-size: 24px;
+  line-height: 1.9;
+  margin-top: 50px;
+  max-width: 50vw;
+  /* width: 40vw; */
+}
+
+.acceptance-letter-button{
+  border: none;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  width: 75px;
+  margin-bottom: 50px;
+}
