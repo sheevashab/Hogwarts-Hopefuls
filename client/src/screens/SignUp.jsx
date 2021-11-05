@@ -52,8 +52,7 @@ export default function SignUp(props) {
         />
       </label>
       <br />
-      <button>
-        <Link to='/'>Sign Up</Link></button>
+      <button>Sign Up</button>
       <h5>Already received your Hogwarts letter?</h5>
       <Link to='/sign-up'>Sign In</Link>
     </form>

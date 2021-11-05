@@ -15,6 +15,9 @@ function App() {
     const handleVerify = async () => {
       const userData = await verifyUser();
       setCurrentUser(userData);
+      if (!userData.has_student) {
+        history.push('/letter');
+      }
     };
     handleVerify();
   }, []);
@@ -22,13 +25,18 @@ function App() {
   const handleSignIn = async (formData) => {
     const userData = await signInUser(formData);
     setCurrentUser(userData);
-    history.push('/');
+    if (userData.has_student) {
+      history.push(`/profile/${userData.id}`);
+    } else {
+      history.push('/letter')
+    }
+
   };
 
   const handleSignUp = async (formData) => {
     const userData = await signUpUser(formData);
     setCurrentUser(userData);
-    history.push('/');
+    history.push('/letter');
   };
 
   const handleSignOut = () => {
@@ -42,10 +50,10 @@ function App() {
     <div className="App">
       <Layout currentUser={currentUser} handleSignOut={handleSignOut}>
         <Switch>
-          <Route exact path='/sign-in'>
+          <Route path='/sign-in'>
             <SignIn handleSignIn={handleSignIn} />
           </Route>
-          <Route exact path='/sign-up'>
+          <Route path='/sign-up'>
             <SignUp handleSignUp={handleSignUp} />
           </Route>
           <Route path='/'>

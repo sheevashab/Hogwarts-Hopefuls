@@ -73,29 +73,35 @@ export default function MainContainer(props) {
   const handleStudentUpdate = async (studentData) => {
     const newStudent = await putStudent(studentData);
     setCurrentStudent(newStudent);
-    history.push(`/profile/${newStudent.id}`)
+    history.push('/profile')
   };
+
+  const handleStudentDelete = async () => {
+    await deleteStudent(currentStudent.id);
+    setCurrentStudent(null);
+    history.push('/letter')
+  }
 
 
   return (
     <Switch>
-      <Route exact path='/home'>
-        <Home />
-      </Route>
-      <Route exact path='/alumni'>
+      <Route path='/alumni'>
         <Alumni students={students} spells={spells} houses={houses} users={users} />
       </Route>
-      <Route exact path='/letter'>
+      <Route path='/letter'>
         <Letter currentUser={currentUser} />
       </Route>
-      <Route exact path='/sorting'>
+      <Route path='/sorting'>
         <LetterPartTwo currentStudent={currentStudent} handleStudentCreate={handleStudentCreate} />
       </Route>
-      <Route exact path='/profile/:id/edit'>
+      <Route path='/profile/:id/edit'>
         <ProfileEdit currentStudent={currentStudent} handleStudentUpdate={handleStudentUpdate} />
-        <Route exact path='/profile/:id'>
-          <Profile currentStudent={currentStudent} />
-        </Route>
+      </Route>
+      <Route path='/profile'>
+        <Profile currentStudent={currentStudent} handleStudentDelete={handleStudentDelete} />
+      </Route>
+      <Route path='/'>
+        <Home />
       </Route>
     </Switch>
   )

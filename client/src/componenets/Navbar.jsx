@@ -4,7 +4,7 @@ import { NavLink, Link } from 'react-router-dom';
 export default function Navbar({ currentUser, handleSignOut }) {
   const authenticatedOptions = (
     <>
-      <NavLink className='navbar-link' id='profile-link' to='/profile/:id'>profile</NavLink>
+      <NavLink className='navbar-link' id='profile-link' to='/profile'>profile</NavLink>
       <Link className='navbar-link' onClick={handleSignOut} to='/'>sign out</Link>
     </>
   )

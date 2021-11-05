@@ -1,16 +1,16 @@
+form {
+ background-color: #B79B48;
+ font-family: 'Poiret One', cursive;
+ text-align: center;
+ width: 50vw;
+}
+
 .sign-in-container {
   background-color: #1c1c18;
   color: #f6f6f8;
   margin: 15px;
   display: flex;
   flex-direction: column;
-}
-
-form {
- background-color: #B79B48;
- font-family: 'Poiret One', cursive;
- text-align: center;
- width: 50vw;
 }
 
 .sign-in-intro {
@@ -20,4 +20,24 @@ form {
 
 .sign-in-message {
   font-size: 18px;
+}
+
+.sign-in-label {
+  background-color: #B79B48;
+}
+.sign-in-input {
+  background-color: #B79B48;
+  color : #f6f6f8;
+  border-style: hidden;
+  border-bottom-style: solid;
+  border-color: #f6f6f8;
+}
+
+.sign-in-button {
+  background-color: #f6f6f8;
+  border: 1px solid;
+  border-radius: 25px;
+  border-style: inset 2px;
+  color: #9881C8;
+  padding: 5px;
 }

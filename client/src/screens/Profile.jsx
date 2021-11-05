@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 
 export default function Profile(props) {
-  const { currentStudent } = props;
+  const { currentStudent, handleStudentDelete } = props;
 
   return (
     <div>
       <h1>Profile</h1>
-      <form>
+      <div>
         <label>
           Name:
           <input type='text' value={currentStudent?.user.username} />
@@ -19,9 +19,9 @@ export default function Profile(props) {
           Patronus:
           <input type='text' value={currentStudent?.patronus} />
         </label>
-        {/* <Link to=`/profile/${currentStudent.id}`><button>Edit</button></Link> */}
-        <button>Delete</button>
-      </form>
+        <Link to={`/profile/${currentStudent?.id}/edit`}><button>Edit</button></Link>
+        <button onClick={handleStudentDelete}>Delete</button>
+      </div>
     </div>
   )
 }
