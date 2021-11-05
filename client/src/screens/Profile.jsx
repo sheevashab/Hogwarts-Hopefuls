@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 
-//get/render one student with all associated attributes
-
 export default function Profile(props) {
   const { currentStudent } = props;
 
@@ -21,7 +19,7 @@ export default function Profile(props) {
           Patronus:
           <input type='text' value={currentStudent?.patronus} />
         </label>
-        {/* <Link to={`/profile/${id}/edit`}><button>Edit</button></Link> */}
+        {/* <Link to=`/profile/${currentStudent.id}`><button>Edit</button></Link> */}
         <button>Delete</button>
       </form>
     </div>

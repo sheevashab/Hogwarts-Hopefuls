@@ -31,7 +31,6 @@ export default function ProfileEdit(props) {
     }));
   };
 
-  //student can edit pet and patronus
   return (
     <div>
       <h1>Profile Edit</h1>

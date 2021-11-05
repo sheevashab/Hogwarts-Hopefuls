@@ -51,7 +51,7 @@ export default function SignIn(props) {
           />
         </label>
         <br />
-        <button>Sign In</button>
+        <Link to='/alumni'><button>Sign In</button></Link>
         <h5>Haven't received your Hogwarts letter yet?</h5>
         <Link to='/sign-up'><button>Sign Up</button></Link>
       </form>
