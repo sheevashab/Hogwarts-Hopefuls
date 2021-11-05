@@ -1,17 +1,27 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 export default function ProfileEdit(props) {
   const [formData, setFormData] = useState({
-    pet: '',
-    patronus: '',
     img_url: '',
-    user: '',
-    house: '',
-    spell: '',
+    patronus: '',
+    pet: '',
   });
 
-  const { pet, patronus, img_url, user, house, spell } = formData;
-  const { handleStudentCreate } = props;
+  const { img_url, patronus, pet } = formData;
+  const { id } = useParams();
+  const { handleStudentUpdate, currentStudent } = props;
+
+  useEffect(() => {
+    const prefillFormData = () => {
+      setFormData({
+        pet: currentStudent.pet
+      })
+    };
+    if (currentStudent) {
+      prefillFormData();
+    }
+  }, [currentStudent])
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,22 +37,33 @@ export default function ProfileEdit(props) {
       <h1>Profile Edit</h1>
       <form onSubmit={(e) => {
         e.preventDefault();
-        handleStudentCreate(formData);
+        handleStudentUpdate(formData)
       }}>
         <label>
           Name:
-          <input type='text' value={user} onChange={handleChange} />
+          <input type='text' value={currentStudent?.user.username} />
         </label>
         <label>
           Pet:
-          <input type='text' value={pet} onChange={handleChange} />
+          <input type='text' name='pet' value={pet} onChange={handleChange} />
         </label>
         <label>
           Patronus:
-          <input type='text' value={patronus} onChange={handleChange} />
+          <input type='text' name='patronus' value={patronus} onChange={handleChange} />
+        </label>
+        <label>
+          Image:
+          <input type='text' name='img_url' value={img_url} onChange={handleChange} />
+        </label>
+        <label>
+          House:
+          <input type='text' value={currentStudent?.house.name} />
+        </label>
+        <label>
+          Spell:
+          <input type='text' value={currentStudent?.spell.name} />
         </label>
         <button>Save</button>
-        <button>Delete</button>
       </form>
     </div>
   )

@@ -1,46 +1,27 @@
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+//get/render one student with all associated attributes
 
 export default function Profile(props) {
-  const [formData, setFormData] = useState({
-    pet: '',
-    patronus: '',
-    img_url: '',
-    user: '',
-    house: '',
-    spell: '',
-  });
-
-  const { pet, patronus, img_url, user, house, spell } = formData;
-  const { handleStudentCreate } = props;
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
+  const { currentStudent } = props;
 
   return (
     <div>
       <h1>Profile</h1>
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        handleStudentCreate(formData);
-      }}>
+      <form>
         <label>
           Name:
-          <input type='text' value={user} onChange={handleChange} />
+          <input type='text' value={currentStudent?.user.username} />
         </label>
         <label>
           Pet:
-          <input type='text' value={pet} onChange={handleChange} />
+          <input type='text' value={currentStudent?.pet} />
         </label>
         <label>
           Patronus:
-          <input type='text' value={patronus} onChange={handleChange} />
+          <input type='text' value={currentStudent?.patronus} />
         </label>
-        <button>Edit</button>
+        {/* <Link to={`/profile/${id}/edit`}><button>Edit</button></Link> */}
         <button>Delete</button>
       </form>
     </div>

@@ -49,7 +49,7 @@ function App() {
             <SignUp handleSignUp={handleSignUp} />
           </Route>
           <Route path='/'>
-            <MainContainer />
+            <MainContainer currentUser={currentUser} />
           </Route>
         </Switch>
       </Layout>

@@ -3,7 +3,7 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 
 import { getAllHouses } from '../services/houses';
 import { getAllSpells } from '../services/spells';
-import { getAllStudents, getOneStudent, postStudent, putStudent, deleteStudent } from '../services/students';
+import { getAllStudents, getOneStudent, postStudent, putStudent, deleteStudent, getUsersStudent } from '../services/students';
 // import { addHouseToStudent, addSpellToStudent } from '../services/students';
 import { getAllUsers } from '../services/users';
 
@@ -14,13 +14,15 @@ import LetterPartTwo from '../screens/LetterPartTwo';
 import Profile from '../screens/Profile';
 import ProfileEdit from '../screens/ProfileEdit';
 
-export default function MainContainer() {
+export default function MainContainer(props) {
   const [students, setStudents] = useState([]);
   const [houses, setHouses] = useState([]);
   const [spells, setSpells] = useState([]);
   const [users, setUsers] = useState([]);
-  const [currentUser, setCurrentUser] = useState([]);
+  const [currentStudent, setCurrentStudent] = useState(null)
   const history = useHistory();
+
+  const { currentUser } = props;
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -54,12 +56,26 @@ export default function MainContainer() {
     fetchSpells();
   }, []);
 
+  useEffect(() => {
+    const fetchCurrentStudent = async () => {
+      const studentData = await getUsersStudent();
+      setCurrentStudent(studentData);
+    };
+    if (currentUser) { fetchCurrentStudent(); }
+  }, [currentUser])
 
-  const handleStudentCreate = async (formData) => {
-    const newStudent = await postStudent(formData);
-    setCurrentUser((prevState) => [...prevState, newStudent]);
-    history.push('/letter');
+
+  const handleStudentCreate = async (studentData) => {
+    const newStudent = await postStudent(studentData);
+    setCurrentStudent(newStudent);
   };
+
+  const handleStudentUpdate = async (studentData) => {
+    const newStudent = await putStudent(studentData);
+    setCurrentStudent(newStudent);
+    history.push(`/profile/${newStudent.id}`)
+  };
+
 
   return (
     <Switch>
@@ -70,15 +86,15 @@ export default function MainContainer() {
         <Alumni students={students} spells={spells} houses={houses} users={users} />
       </Route>
       <Route exact path='/letter'>
-        <Letter currentUser={setCurrentUser} handleStudentCreate={handleStudentCreate} />
+        <Letter currentUser={currentUser} />
       </Route>
       <Route exact path='/sorting'>
-        <LetterPartTwo />
+        <LetterPartTwo currentStudent={currentStudent} handleStudentCreate={handleStudentCreate} />
       </Route>
       <Route exact path='/profile/:id/edit'>
-        <ProfileEdit />
+        <ProfileEdit currentStudent={currentStudent} handleStudentUpdate={handleStudentUpdate} />
         <Route exact path='/profile/:id'>
-          <Profile />
+          <Profile currentStudent={currentStudent} />
         </Route>
       </Route>
     </Switch>
