@@ -55,21 +55,21 @@ export default function ProfileEdit(props) {
               <div>
                 <label>
                   Name
-                  <textarea className='profile-input' type='text' value={currentStudent?.user.username} />
+                  <div className='profile-input' readOnly>{currentStudent?.user.username}</div>
                 </label>
               </div>
 
               <div>
                 <label>
                   House
-                  <textarea className='profile-input' type='text' value={currentStudent?.house.name} />
+                  <div className='profile-input' readOnly>{currentStudent?.house.name} </div>
                 </label>
               </div>
 
               <div>
                 <label>
                   Spell
-                  <textarea className='profile-input' type='text' value={currentStudent?.spell.name} />
+                  <div className='profile-input' readOnly>{currentStudent?.spell.name}</div>
                 </label>
               </div>
 

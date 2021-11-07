@@ -20,7 +20,7 @@ export default function Profile(props) {
           </div>
         </div>
       </div>
-      <Link className='profile-button'
+      <Link className='profile-button-container'
         to={`/profile/${currentStudent?.id}/edit`}>
         <button className='profile-button'>
           Obliviate<br />(edit)

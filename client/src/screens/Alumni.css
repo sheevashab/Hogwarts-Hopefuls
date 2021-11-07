@@ -1,0 +1,11 @@
+.alumni-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.alumni-header {
+  color: #F6F6F8;
+  font-family: 'Irish Grover', cursive;
+  font-size: 28px;
+  text-align: center;
+}
