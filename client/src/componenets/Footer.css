@@ -1,21 +1,22 @@
 footer {
-  position:absolute;
-  left:0;
+  background-color: #b79b484b;
   bottom:0;
-  right:0;
+  display: flex;
+  left:0;
+  padding: 2vh 0;
+  position:relative;
   width: 100vw;
-  height: 100px;
 }
 
 .footer-container {
-  background-color: #b79b484b;
-  width: 100%;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  width: 100%;
 }
 
 .footer-section-one{
+  align-self: start;
   display: flex;
 }
 
@@ -24,6 +25,7 @@ footer {
 }
 
 .footer-section-three{
+  align-self: end;
   display: flex;
 }
 
@@ -32,15 +34,29 @@ footer {
 }
 
 .footer-logo{
+  align-self: center;
   color: #B79B48;
+  display: flex;
   font-family: 'Irish Grover', cursive;
   font-size: 36px;
-  margin-left: 15px;
   text-decoration: none;
 }
 
 .github-logo{
-  display: flex;
   align-self: center;
+  display: flex;
+  margin: 5px;
   width: 75px;
+}
+
+@media only screen and (min-width: 750px) {
+  .footer-logo{
+    font-size: 42px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer-logo{
+    font-size: 48px;
+  }
 }
