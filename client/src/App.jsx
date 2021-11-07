@@ -15,7 +15,7 @@ function App() {
     const handleVerify = async () => {
       const userData = await verifyUser();
       setCurrentUser(userData);
-      if (!userData.has_student) {
+      if (!userData?.has_student) {
         history.push('/letter');
       }
     };
