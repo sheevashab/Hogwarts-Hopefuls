@@ -34,34 +34,31 @@ export default function SignIn(props) {
           <h4 className='sign-in-message'>To The<br />Wonderful World Of<br />Witchcraft And Wizardry</h4>
           <label className='sign-in-label'>
             User Name
-            <div>
-              <input
-                className='sign-in-input'
-                type='text'
-                name='username'
-                value={username}
-                onChange={handleChange}
-              />
-            </div>
+            <input
+              className='sign-in-input'
+              type='text'
+              name='username'
+              value={username}
+              onChange={handleChange}
+            />
           </label>
           <br />
           <label className='sign-in-label'>
             Password
-            <div>
-              <input
-                className='sign-in-input'
-                type='password'
-                name='password'
-                value={password}
-                onChange={handleChange}
-              />
-            </div>
+            <input
+              className='sign-in-input'
+              type='password'
+              name='password'
+              value={password}
+              onChange={handleChange}
+            />
           </label>
           <br />
+
           <button className='sign-in-button'>
             <img src='https://res.cloudinary.com/dyyjvyqtn/image/upload/v1636300185/wand_vkkfkj.png'
               alt='wand'
-              className='sign-in-wand' />
+              className='sign-in-button-image' />
             Sign In
           </button>
           <h5 className='sign-in-to-sign-up'>
