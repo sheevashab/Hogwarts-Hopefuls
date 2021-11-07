@@ -12,11 +12,11 @@ export default function Profile(props) {
             <img className='profile-pic' src={currentStudent?.img_url} />
           </div>
           <div className='profile-inputs'>
-            <input className='profile-input' type='text' value={currentStudent?.user.username} />
-            <input className='profile-input' type='text' value={currentStudent?.house.name} />
-            <input className='profile-input' type='text' value={currentStudent?.spell.name} />
-            <input className='profile-input' type='text' value={currentStudent?.patronus} />
-            <input className='profile-input' type='text' value={currentStudent?.pet} />
+            <textarea className='profile-input' type='text' value={currentStudent?.user.username} />
+            <textarea className='profile-input' type='text' value={currentStudent?.house.name} />
+            <textarea className='profile-input' type='text' value={currentStudent?.spell.name} />
+            <textarea className='profile-input' type='text' value={currentStudent?.patronus} />
+            <textarea className='profile-input' type='text' value={currentStudent?.pet} />
           </div>
         </div>
       </div>

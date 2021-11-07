@@ -1,4 +1,3 @@
-import './ProfileEdit.css'
 import './Profile.css'
 import { useState, useEffect } from 'react';
 
@@ -39,46 +38,56 @@ export default function ProfileEdit(props) {
             e.preventDefault();
             handleStudentUpdate(formData)
           }}>
-            <div>
+
+            <div className='profile-pic-container'>
               <img className='profile-pic' src={currentStudent?.img_url} />
             </div>
-            <div>
-              <label>
-                Student Photo:
-                <input className='profile-input' type='text' name='img_url' value={img_url} onChange={handleChange} />
-              </label>
+
+
+            <div className='profile-inputs'>
+              <div>
+                <label>
+                  Student Photo (URL)
+                  <input className='profile-input' type='text' name='img_url' value={img_url} onChange={handleChange} />
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  Name
+                  <textarea className='profile-input' type='text' value={currentStudent?.user.username} />
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  House
+                  <textarea className='profile-input' type='text' value={currentStudent?.house.name} />
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  Spell
+                  <textarea className='profile-input' type='text' value={currentStudent?.spell.name} />
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  Patronus
+                  <input className='profile-input' type='text' name='patronus' value={patronus} onChange={handleChange} />
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  Pet
+                  <input className='profile-input' type='text' name='pet' value={pet} onChange={handleChange} />
+                </label>
+              </div>
             </div>
-            <div>
-              <label>
-                Name:
-                <input className='profile-input' readOnly={true} type='text' value={currentStudent?.user.username} />
-              </label>
-            </div>
-            <div>
-              <label>
-                House:
-                <input className='profile-input' readOnly={true} type='text' value={currentStudent?.house.name} />
-              </label>
-            </div>
-            <div>
-              <label>
-                Spell:
-                <input className='profile-input' readOnly={true} type='text' value={currentStudent?.spell.name} />
-              </label>
-            </div>
-            <div>
-              <label>
-                Patronus:
-                <input className='profile-input' type='text' name='patronus' value={patronus} onChange={handleChange} />
-              </label>
-            </div>
-            <div>
-              <label>
-                Pet:
-                <input className='profile-input' type='text' name='pet' value={pet} onChange={handleChange} />
-              </label>
-            </div>
-            <button>Save</button>
+            <button className='profile-button'>Save</button>
           </form>
         </div>
       </div>
