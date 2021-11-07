@@ -59,10 +59,8 @@ form {
 .sign-in-input {
   background: transparent;
   border: none;
+  border-bottom: 1px solid #F6F6F8;
   color : #f6f6f8;
-  border-style: hidden;
-  border-bottom-style: solid;
-  border-color: #f6f6f8;
   font-family: 'Poiret One', cursive;
   font-size: 18px;
   width: 50vw;

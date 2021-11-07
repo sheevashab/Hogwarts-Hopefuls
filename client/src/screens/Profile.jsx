@@ -8,51 +8,29 @@ export default function Profile(props) {
     <div className='profile-container'>
       <div className='profile-card'>
         <div className='profile-info'>
-          <div>
-            <div>
-              <img className='profile-pic' src={currentStudent?.img_url} />
-            </div>
-            <div>
-              <label>
-                Student Photo:
-                <input className='profile-input' type='text' src={currentStudent?.img_url} />
-              </label>
-            </div>
-            <div>
-              <label>
-                Name:
-                <input className='profile-input' type='text' value={currentStudent?.user.username} />
-              </label>
-            </div>
-            <div>
-              <label>
-                House:
-                <input className='profile-input' type='text' value={currentStudent?.house.name} />
-              </label>
-            </div>
-            <div>
-              <label>
-                Spell:
-                <input type='text' value={currentStudent?.spell.name} />
-              </label>
-            </div>
-            <div>
-              <label>
-                Patronus:
-                <input className='profile-input' type='text' value={currentStudent?.patronus} />
-              </label>
-            </div>
-            <div>
-              <label>
-                Pet:
-                <input className='profile-input' type='text' value={currentStudent?.pet} />
-              </label>
-            </div>
-            <Link to={`/profile/${currentStudent?.id}/edit`}><button>Edit</button></Link>
-            <button onClick={handleStudentDelete}>Delete</button>
+          <div className='profile-pic-container'>
+            <img className='profile-pic' src={currentStudent?.img_url} />
+          </div>
+          <div className='profile-inputs'>
+            <input className='profile-input' type='text' value={currentStudent?.user.username} />
+            <input className='profile-input' type='text' value={currentStudent?.house.name} />
+            <input className='profile-input' type='text' value={currentStudent?.spell.name} />
+            <input className='profile-input' type='text' value={currentStudent?.patronus} />
+            <input className='profile-input' type='text' value={currentStudent?.pet} />
           </div>
         </div>
       </div>
+      <Link className='profile-button'
+        to={`/profile/${currentStudent?.id}/edit`}>
+        <button className='profile-button'>
+          Obliviate<br />(edit)
+        </button>
+      </Link>
+      <button
+        className='profile-button'
+        onClick={handleStudentDelete}>
+        Avada Kedabra<br />(delete)
+      </button>
     </div >
   )
 }
