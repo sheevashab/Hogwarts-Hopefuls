@@ -1,7 +1,6 @@
 import './ProfileEdit.css'
 import './Profile.css'
 import { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
 
 export default function ProfileEdit(props) {
   const [formData, setFormData] = useState({
@@ -9,7 +8,6 @@ export default function ProfileEdit(props) {
     patronus: '',
     pet: '',
   });
-  const history = useHistory();
 
   const { img_url, patronus, pet } = formData;
   const { handleStudentUpdate, currentStudent } = props;
@@ -40,7 +38,6 @@ export default function ProfileEdit(props) {
           <form onSubmit={(e) => {
             e.preventDefault();
             handleStudentUpdate(formData)
-            history.push('/profile')
           }}>
             <div>
               <img className='profile-pic' src={currentStudent?.img_url} />
@@ -54,19 +51,19 @@ export default function ProfileEdit(props) {
             <div>
               <label>
                 Name:
-                <input className='profile-input' type='text' value={currentStudent?.user.username} />
+                <input className='profile-input' readOnly={true} type='text' value={currentStudent?.user.username} />
               </label>
             </div>
             <div>
               <label>
                 House:
-                <input className='profile-input' type='text' value={currentStudent?.house.name} />
+                <input className='profile-input' readOnly={true} type='text' value={currentStudent?.house.name} />
               </label>
             </div>
             <div>
               <label>
                 Spell:
-                <input className='profile-input' type='text' value={currentStudent?.spell.name} />
+                <input className='profile-input' readOnly={true} type='text' value={currentStudent?.spell.name} />
               </label>
             </div>
             <div>

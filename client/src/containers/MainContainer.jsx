@@ -71,6 +71,7 @@ export default function MainContainer(props) {
 
   const handleStudentUpdate = async (studentData) => {
     const newStudent = await putStudent(studentData);
+    console.log(newStudent);
     setCurrentStudent(newStudent);
     history.push('/profile')
   };
