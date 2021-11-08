@@ -23,11 +23,11 @@ nav {
 }
 
 .navbar-links-container {
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
-  margin-right: 15px;
   justify-content: space-between;
-  align-items: flex-end;
+  margin-right: 15px;
 }
 
 .navbar-link {
@@ -48,13 +48,13 @@ nav {
   }
 
   .navbar-links-container {
+    align-self: flex-end;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
     margin-right: 30px;
     width: 50vw;
-    justify-content: space-between;
-    align-self: flex-end;
-    margin-bottom: 20px;
   }
   .navbar-link {
     font-size: 24px;
@@ -69,13 +69,13 @@ nav {
   }
 
   .navbar-links-container {
+    align-self: flex-end;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
     margin-right: 30px;
     width: 50vw;
-    justify-content: space-between;
-    align-self: flex-end;
-    margin-bottom: 20px;
 }
 
 .navbar-link {
