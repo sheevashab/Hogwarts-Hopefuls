@@ -4,7 +4,7 @@
 
 ## Overview
 
-**Hogwarts Hopefuls** is an app where users can sign up for an added touch of magic in their lives. Once an account is creacted, the user (aka future Hogwarts student) will recieve their Hogwarts acceptance letter, be sorted into their respective Hogwarts house based on their answer to a question, and be assigned a signature spell. Additionally, students can select to have a pet and a patronus.
+**Hogwarts Hopefuls** is an app where users can sign up for an added touch of magic in their lives. Once an account is creacted, the user (aka future Hogwarts student) will recieve their Hogwarts acceptance letter, be sorted into their respective Hogwarts house based on their answer to a question, and be assigned a signature spell. Additionally, students can select to have a pet, a patronus, and a profile picture.
 
 <br>
 
@@ -17,9 +17,9 @@ The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app with at least th
 ### Goals
 
 - Full CRUD functionality on backend and frontend
-- Backend database will consist of 3 tables and 2 one-to-one associations
+- Backend database will consist of 4 tables, 2 one-to-many associations, and 1 one-to-one assocation
 - Flexbox for responsive design
-- Cohesive design aesthetic via CSS
+- Cohesive Hogwarts-esque design aesthetic via CSS
 
 <br>
 
@@ -73,7 +73,7 @@ The **Hogwarts Hopefuls** MVP will be a full-stack, RESTful app with at least th
 
 #### Component Tree
 
-![Component Tree](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1635817490/Project4_Component_Tree_yhxhws.png)
+![Component Tree](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1636339178/Project4_Component_Tree_2x_b1hs37.png)
 
 #### Component Architecture
 
@@ -83,19 +83,13 @@ src
 |__ components/
       |__ Footer.jsx
       |__ Footer.css
-      |__ Navbar.jsx
-      |__ Navbar.css
       |__ Layout.jsx
       |__ Layout.css
+      |__ Navbar.jsx
+      |__ Navbar.css
       |__ ScrollToTop.jsx
-      |__ ScrollToTop.css
-      |__ SignOut.jsx
-      |__ SignOut.css
-      |__ StudentCard.jsx
-      |__ StudentCard.css
 |__ containers/
       |__ MainContainer.jsx
-      |__ MainContainer.css
 |__ screens/
       |__ Alumni.jsx
       |__ Alumni.css
@@ -118,6 +112,8 @@ src
       |__ authorization.jsx
       |__ houses.jsx
       |__ spells.jsx
+      |__ students.jsx
+      |__ users.jsx
 
 ```
 
@@ -125,36 +121,36 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| README    |    H     |     3 hrs      |     3 hrs     |     hrs    |
-| ERD Model |    H     |     1 hrs      |    .5 hrs     |     hrs     |
-| Component Tree |    H     |     1 hrs      |     1 hrs     |     hrs     |
-| Component Architecture |    H     |     1 hrs      |     .5 hrs     |     hrs     |
-| Wireframes |    H     |     3 hrs      |     4 hrs     |     hrs     |
-| Create and Setting Up Backend |    H     |     1 hrs      |    .5 hrs     |     hrs     |
-| Authorization |    H     |     2 hrs      |    1 hrs     |     hrs     |
-| Create Tables |    H     |     1 hrs      |    .5 hrs     |     hrs     |
-| Create Models |    H     |     1 hrs      |    .5 hrs     |     hrs     |
-| Seed Data |    H     |     2 hrs      |    1 hrs     |     hrs     |
-| Create Controllers |    H     |     3 hrs      |    1 hrs     |     hrs     |
+| README    |    H     |     3 hrs      |     3 hrs     |   3  hrs    |
+| ERD Model |    H     |     1 hrs      |    .5 hrs     |    .5 hrs     |
+| Component Tree |    H     |     1 hrs      |     1 hrs     |   1  hrs     |
+| Component Architecture |    H     |     1 hrs      |     .5 hrs     |    .5 hrs     |
+| Wireframes |    H     |     3 hrs      |     4 hrs     |    4 hrs     |
+| Create and Setting Up Backend |    H     |     1 hrs      |    .5 hrs     |    .5 hrs     |
+| Authorization |    H     |     2 hrs      |    1 hrs     |    1 hrs     |
+| Create Tables |    H     |     1 hrs      |    .5 hrs     |    .5 hrs     |
+| Create Models |    H     |     1 hrs      |    1 hrs     |    1 hrs     |
+| Seed Data |    H     |     2 hrs      |    1 hrs     |    1 hrs     |
+| Create Controllers |    H     |     3 hrs      |    2 hrs     |    2 hrs     |
 | Create Routes |    H     |     3 hrs      |    1 hrs     |     hrs     |
-| Deploy Backend via Heroku |    H     |     1 hrs      |     hrs     |     hrs     |
-| Create React App, Install Dependencies, Set Up Component Architecture |    H     |     1.5 hrs      |    .5 hrs     |     hrs     |
-| Code Routes in App.jsx |    H     |     2 hrs      |     hrs     |     hrs     |
-| Code Authorization - Sign In/ Sign Up Forms with Sign Out Component |    H     |     3 hrs      |     hrs     |     hrs     |
-| Code Layout Component |    H     |     2 hrs      |     hrs     |     hrs     |
-| Code Home Screen |    H     |     3 hrs      |     hrs     |     hrs     |
-| Code Sorting / Spell Screens |    H     |     3 hrs      |     hrs     |     hrs     |
-| Code Profile/Edit Screen |    H     |     3 hrs      |     hrs     |     hrs     |
-| Code Alumni Screen |    H     |     3 hrs      |     hrs     |     hrs     |
-| Style Layout - Header + Footer |    H     |     3 hrs      |     hrs     |     hrs     |
-| Style Home Screen |    H     |     3 hrs      |     hrs     |     hrs     |
-| Style Sign In/Up Screens |    H     |     3 hrs      |     hrs     |     hrs     |
-| Style Sorting / Spell Screens |    H     |     3 hrs      |     hrs     |     hrs     |
-| Style Profile/Edit Screen |    H     |     3 hrs      |     hrs     |     hrs     |
-| Style Alumni Screen |    H     |     3 hrs      |     hrs     |     hrs     |
-| Deploy Frontend via Netlify |    H     |     1 hrs      |     hrs     |     hrs     |
-| Linting |    M     |     1 hrs      |     hrs     |     hrs     |
-| TOTAL               |          |     64 hrs      |     3 hrs     |     TBD     |
+| Deploy Backend via Heroku |    H     |     1 hrs      |    .5 hrs     |    .5 hrs     |
+| Create React App, Install Dependencies, Set Up Component Architecture |    H     |     1.5 hrs      |    .5 hrs     |    .5 hrs     |
+| Code Routes in App.jsx |    H     |     2 hrs      |    2 hrs     |    2 hrs     |
+| Code Authorization - Sign In/ Sign Up Forms with Sign Out Component |    H     |     3 hrs      |    2 hrs     |    2 hrs     |
+| Code Layout Component |    H     |     2 hrs      |    1 hrs     |    1 hrs     |
+| Code Home Screen |    H     |     3 hrs      |    1 hrs     |    1 hrs     |
+| Code Sorting / Spell Screens |    H     |     3 hrs      |    1.5 hrs     |    1.5 hrs     |
+| Code Profile/Edit Screen |    H     |     3 hrs      |    2.5 hrs     |    2.5 hrs     |
+| Code Alumni Screen |    H     |     3 hrs      |    2 hrs     |    2 hrs     |
+| Style Layout - Header + Footer |    H     |     3 hrs      |    3 hrs     |    3 hrs     |
+| Style Home Screen |    H     |     3 hrs      |    2 hrs     |    2 hrs     |
+| Style Sign In/Up Screens |    H     |     3 hrs      |    2 hrs     |    2 hrs     |
+| Style Letter / LetterPartTwo Screens |    H     |     3 hrs      |     hrs     |     hrs     |
+| Style Profile/Edit Screen |    H     |     3 hrs      |    3 hrs     |    3 hrs     |
+| Style Alumni Screen |    H     |     3 hrs      |    3 hrs     |    3 hrs     |
+| Deploy Frontend via Netlify |    H     |     1 hrs      |    .5 hrs     |    .5 hrs     |
+| Linting |    M     |     1 hrs      |     .5 hrs     |    .5 hrs     |
+| TOTAL               |          |     64 hrs      |     43 hrs     |     TBD     |
 
 
 <br>
@@ -169,15 +165,52 @@ src
 
 ## Post-MVP
 
-> My Post-MVP for this project would be expanding on its functionality. I think it would be a more useful app if the users could accomplish more during their visit. For example, I would like to expand the sorting hat questionairre to more than a question. I would also like to make a quiz to assign the specialty spell and patronus. 
-I would also like to make a 'Common Room', or a space for students of the same house to find each other.
+My Post-MVP for this project would be expanding on its functionality. I think it would be a more useful app if the users could accomplish more during their visit. For example, I would like to expand the sorting hat questionairre to more than a single question. I would also like to make a quiz to assign the specialty spell and patronus. 
+Using a sorting function to create a 'Common Room', or a space for students of the same house to find each other, is also a postMVP function. 
+As far as styling goes, I would like to conditionally render the background color for the profile card to match the student's house. 
 
 ***
 
 ## Code Showcase
+```
+<div className='sorting-letter-container'>
+      If you could be a flavor of Bertie Bott's Every Flavor Beans, which would you be?
+      <button onClick={() => handleStudentCreate({ house_id: 4 })}>Earthworm</button>
+      <button onClick={() => handleStudentCreate({ house_id: 2 })}>Earwax</button>
+      <button onClick={() => handleStudentCreate({ house_id: 1 })}>Grass</button>
+      <button onClick={() => handleStudentCreate({ house_id: 3 })}>Rotten Egg</button>
+      {currentStudent && <div>
+        <h2>{currentStudent.house.name}</h2>
+        <p>And before we let you leave for Diagon Ally, we have one more question to ask our incoming students. Click your wand on the magical button below to connect your wand’s core to the school’s database.</p>
+        <button onClick={() => setShowSpell(true)}>WandPicture</button>
+        {showSpell && <div>
+          <p>Brilliant! Your specialty spell has been revealed as...</p>
+          <h2>{currentStudent.spell.name}</h2>
+          <Link to={`/profile/${currentStudent.id}/edit`}><button>Arrow</button></Link>
+        </div>}
+      </div>}
+    </div>
+```
+This is the code that renders the second part of the Hogwarts letter. The curly brackets and the double ampersand tell React to render the sections one at a time rather than displaying everything on the page on the initial load.
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+***
 
 ## Code Issues & Resolutions
+```
+class User < ApplicationRecord
+  has_secure_password
 
-> Use this section to list of all major issues encountered and their resolution.
+  validates :username, presence: true, uniqueness: true
+  validates :email, presence: true, uniqueness: true
+  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
+  validates :password, length: {minimum: 8}
+
+  has_one :student
+
+  def has_student
+    !!student
+  end
+
+end
+```
+> I struggled to create the one-to-one relationship between the user and the student. With the method has_student, the frontend is able to prompt the user to create a student if they decide to delete the one they currently have.
