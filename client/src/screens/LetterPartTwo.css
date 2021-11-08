@@ -1,15 +1,55 @@
 .sorting-letter-container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  font-family: 'Tangerine', cursive;
-  font-size: 24px;
-  line-height: 1.9;
-  justify-items: center;
-  justify-content: space-between;
   background-image: url("https://res.cloudinary.com/dyyjvyqtn/image/upload/v1636132712/Parchment-Vector_pgvopc.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Tangerine', cursive;
+  font-size: 24px;
+  height: 80vh;
+  line-height: 1.5;
+  justify-content: space-between;
+  justify-items: center;
   padding: 25px;
+}
+
+.sorting-question {
+  display: flex;
+  flex-direction: column;
+  text-align: center ;
+  margin-top: 50px;
+  max-width: 50vw;
+  width: 40%;
+}
+
+.sorting-question-button {
+  border: none;
+  background: transparent;
+  font-family: 'IM Fell DW Pica', serif;
+}
+
+.sorting-question-reveal {
+  font-family: 'Tangerine', cursive;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sorting-spell-intro {
+  font-family: 'Tangerine', cursive;
+  font-size: 24px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.sorting-wand-button {
+  border: none;
+  background-color: transparent;
+  width: 75px;
+}
+
+.sorting-continue-button {
+  justify-items: center;
 }

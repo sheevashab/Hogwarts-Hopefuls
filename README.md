@@ -145,12 +145,12 @@ src
 | Style Layout - Header + Footer |    H     |     3 hrs      |    3 hrs     |    3 hrs     |
 | Style Home Screen |    H     |     3 hrs      |    2 hrs     |    2 hrs     |
 | Style Sign In/Up Screens |    H     |     3 hrs      |    2 hrs     |    2 hrs     |
-| Style Letter / LetterPartTwo Screens |    H     |     3 hrs      |     hrs     |     hrs     |
+| Style Letter / LetterPartTwo Screens |    H     |     3 hrs      |    3 hrs     |    3 hrs     |
 | Style Profile/Edit Screen |    H     |     3 hrs      |    3 hrs     |    3 hrs     |
 | Style Alumni Screen |    H     |     3 hrs      |    3 hrs     |    3 hrs     |
 | Deploy Frontend via Netlify |    H     |     1 hrs      |    .5 hrs     |    .5 hrs     |
 | Linting |    M     |     1 hrs      |     .5 hrs     |    .5 hrs     |
-| TOTAL               |          |     64 hrs      |     43 hrs     |     TBD     |
+| TOTAL               |          |     64 hrs      |     46 hrs     |     TBD     |
 
 
 <br>

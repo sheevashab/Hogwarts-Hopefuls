@@ -10,11 +10,9 @@ export default function Letter(props) {
       <div className='acceptance-letter'>
         <p>Dear {currentUser?.username},
           <br />
-          <br />
           We are pleased to inform you that you have been accepted to Hogwarts School of Witchcraft and Wizardry.
           We very much look forward to receiving you as part of the new generation of Hogwarts.<br />
           Yours Sincerely,
-          <br />
           <br />
           Minerva McGonagall
           <br />
