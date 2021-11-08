@@ -9,7 +9,10 @@ export default function Profile(props) {
       <div className='profile-card'>
         <div className='profile-info'>
           <div className='profile-pic-container'>
-            <img className='profile-pic' src={currentStudent?.img_url} />
+            <img
+              className='profile-pic'
+              alt='user profile'
+              src={currentStudent?.img_url} />
           </div>
           <div className='profile-inputs'>
             <textarea className='profile-input' type='text' value={currentStudent?.user.username} />
@@ -20,8 +23,7 @@ export default function Profile(props) {
           </div>
         </div>
       </div>
-      <Link className='profile-button-container'
-        to={`/profile/${currentStudent?.id}/edit`}>
+      <Link className='profile-link' to={`/profile/${currentStudent?.id}/edit`}>
         <button className='profile-button'>
           Obliviate<br />(edit)
         </button>

@@ -13,7 +13,10 @@ export default function Alumni(props) {
               <div className='profile-card'>
                 <div className='profile-info'>
                   <div className='profile-pic-container'>
-                    <img className='profile-pic' src={student.img_url} />
+                    <img
+                      className='profile-pic'
+                      alt='user profile'
+                      src={student.img_url} />
                   </div>
                   <div className='profile-inputs'>
                     <p className='profile-input'>{student.user.username}</p>

@@ -3,6 +3,7 @@
 html {
   overflow: scroll;
   overflow-x: hidden;
+  width: fit-content;
 }
 ::-webkit-scrollbar {
   width: 0;  

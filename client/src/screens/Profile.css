@@ -53,10 +53,6 @@
   width: 50vw;
 }
 
-.profile-button-container {
-  background-color: #9881C8;
-}
-
 .profile-button {
   align-items: center;
   align-self: center;
@@ -72,5 +68,12 @@
   height: 50px;
   justify-content: center;
   margin: 10px;
+  text-decoration: none;
   width: 150px;
+}
+
+.profile-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }

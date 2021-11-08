@@ -40,7 +40,10 @@ export default function ProfileEdit(props) {
           }}>
 
             <div className='profile-pic-container'>
-              <img className='profile-pic' src={currentStudent?.img_url} />
+              <img
+                className='profile-pic'
+                alt='user profile'
+                src={currentStudent?.img_url} />
             </div>
 
 

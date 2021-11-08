@@ -26,6 +26,7 @@ export default function Letter(props) {
         <Link to='/sorting'>
           <button className='acceptance-letter-button' >
             <img className='acceptance-letter-button'
+              alt='Sorting Hat'
               src='https://res.cloudinary.com/dyyjvyqtn/image/upload/v1636134784/SortingHatNoWhite_zkuv5v.png' />
           </button>
         </Link>
